@@ -1,9 +1,12 @@
+/*jslint nomen:true */
+/*global __dirname,require,console*/
+
 var express = require("express"),
   app = express(),
   sassMiddleware = require("node-sass-middleware"),
   livereload = require("express-livereload");
 
-livereload(app, config={});
+livereload(app, {});
 
 app.use(sassMiddleware({
     src: __dirname + "/public",

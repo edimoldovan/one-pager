@@ -1,0 +1,8 @@
+{
+  "name": "one-pager",
+  "dependencies": {
+    "express": "latest",
+    "node-sass-middleware": "latest",
+    "express-livereload": "latest"
+  }
+}

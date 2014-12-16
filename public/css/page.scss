@@ -1,0 +1,100 @@
+@import "normalize";
+@import "skeleton";
+
+$home-bg: #CADBC0;
+$about-bg: #C94277;
+$work-bg: #A27E6F;
+$download-bg: #94524A;
+$contact-bg: #2F0A28;
+
+.home {
+	background-color: $home-bg;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+	.home {
+  	padding: 10rem 0 10rem;
+
+  	.button {
+  		margin: 3rem auto;
+			display: block;
+			width: 20rem;
+			border-radius: 10rem;
+  	}
+
+  	h1 {
+	    font-size: 3rem;
+	    color: green;
+	  }
+	  .image {
+	  	float: right;
+	    width: 100%;
+	  }
+  }
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+  .home {
+  	padding: 20rem 0 10rem;
+
+  	.button {
+  		margin: 1rem auto;
+  		float: left;
+  	}
+
+  	h1 {
+	    font-size: 2.4rem;
+	    color: green;
+	  }
+	  .image {
+	  	float: right;
+	    max-width: 362px;
+	    margin-top: -10rem;
+	  }
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .home {
+  	padding: 20rem 0 10rem;
+
+  	h1 {
+	    font-size: 2.6rem;
+	    color: blue;
+	  }
+	  .image {
+	    margin-top: -14rem;
+	    max-height: 510px;
+	  }
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .home {
+  	padding: 25rem 0 10rem;
+
+  	h1 {
+	    font-size: 3.0rem;
+	    color: red;
+	  }
+	  .image {
+	    margin-top: -16rem;
+	    max-height: 615px;
+	  }
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+
+
+

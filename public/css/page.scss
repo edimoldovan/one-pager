@@ -95,6 +95,14 @@ $contact-bg: #2F0A28;
 @media (min-width: 1200px) {}
 
 
-
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+		color: yellow;
+	}
+	
+}
 
 

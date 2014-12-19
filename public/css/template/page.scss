@@ -1,10 +1,24 @@
+// Colors
+$primary-color: #0288d1; 
+$secondary-color: #bbbbbb;
+$border-color: #bbbbbb;
+$link-color: #1EAEDB;
+$font-color: #222222;
+$light-gray: #e1e1e1;
+$dark-gray: #333333;
+
 @import "../framework/all";
 
-$home-bg: #CADBC0;
+$home-bg: #ffffff;
 $about-bg: #C94277;
 $work-bg: #A27E6F;
 $download-bg: #94524A;
 $contact-bg: #2F0A28;
+
+$home-text: #212121;
+$logo-text: #ffc107;
+
+$niconne: "Niconne", cursive;
 
 .home {
 	background-color: $home-bg;
@@ -13,8 +27,34 @@ $contact-bg: #2F0A28;
 /* Larger than mobile */
 @media (min-width: 400px) {
 
+	.header {
+		width: 100%;
+
+		h1 {
+			float: left;
+			margin: 0;
+			
+			a {
+				float: left;
+				font-family: $niconne;
+				color: $primary-color;
+				font-size: 6rem;
+				padding: 2rem 0 1rem 0;
+			}
+		}
+
+		.menu {
+			float: right;
+
+			.fa-bars {
+				font-size: 3rem;
+				padding: 5rem 0 2rem 0;
+			}
+		}
+	}
+
 	.home {
-  	padding: 10rem 0 10rem;
+  	padding: 0 0 10rem 0;
 
   	.button {
   		margin: 3rem auto;
@@ -23,9 +63,9 @@ $contact-bg: #2F0A28;
 			border-radius: 10rem;
   	}
 
-  	h1 {
-	    font-size: 3rem;
-	    color: green;
+  	h2 {
+	    font-size: 2.5rem;
+	    color: $home-text;
 	  }
 	  .image {
 	  	float: right;
@@ -46,14 +86,13 @@ $contact-bg: #2F0A28;
   		float: left;
   	}
 
-  	h1 {
+  	h2 {
 	    font-size: 2.4rem;
-	    color: green;
 	  }
 	  .image {
 	  	float: right;
-	    max-width: 362px;
 	    margin-top: -10rem;
+	    max-width: 30rem;
 	  }
   }
 }
@@ -63,13 +102,11 @@ $contact-bg: #2F0A28;
   .home {
   	padding: 20rem 0 10rem;
 
-  	h1 {
+  	h2 {
 	    font-size: 2.6rem;
-	    color: blue;
 	  }
 	  .image {
 	    margin-top: -14rem;
-	    max-height: 510px;
 	  }
   }
 }
@@ -79,9 +116,8 @@ $contact-bg: #2F0A28;
   .home {
   	padding: 25rem 0 10rem;
 
-  	h1 {
+  	h2 {
 	    font-size: 3.0rem;
-	    color: red;
 	  }
 	  .image {
 	    margin-top: -16rem;

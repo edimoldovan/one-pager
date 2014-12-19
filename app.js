@@ -11,8 +11,8 @@ livereload(app, {});
 app.use(sassMiddleware({
     src: __dirname + "/public",
     dest: __dirname + "/public",
-    debug: true,
-    outputStyle: "compressed"
+    debug: true/*,
+    outputStyle: "compressed"*/
   })
 );
 

@@ -730,6 +730,20 @@ hr {
     .home .image {
       float: right;
       width: 100%; }
+
+  .work {
+    padding: 0 0 10rem 0; }
+    .work .button {
+      margin: 3rem auto;
+      display: block;
+      width: 20rem;
+      border-radius: 10rem; }
+    .work h2 {
+      font-size: 2.5rem;
+      color: #212121; }
+    .work .image {
+      float: right;
+      width: 100%; }
  }
 
 /* Larger than phablet (also point when grid becomes active) */

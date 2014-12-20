@@ -73,6 +73,26 @@ $niconne: "Niconne", cursive;
 	  }
   }
 
+	.work {
+  	padding: 0 0 10rem 0;
+
+  	.button {
+  		margin: 3rem auto;
+			display: block;
+			width: 20rem;
+			border-radius: 10rem;
+  	}
+
+  	h2 {
+	    font-size: 2.5rem;
+	    color: $home-text;
+	  }
+	  .image {
+	  	float: right;
+	    width: 100%;
+	  }
+  }
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */

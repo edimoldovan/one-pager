@@ -50,7 +50,7 @@ $container-width: 960px;
   .container .eleven.columns       { width: $column-width*11-($column-margin/2); }
   .container .twelve.columns       { width: 100%; margin-left: 0; }
 
-  .container .one-third.column     { width: $column-width*4-($column-margin/2);  }
+  .container .one-third.column     { width: $column-width*4-($column-margin);  }
   .container .two-thirds.column    { width: $column-width*8-($column-margin/2);  }
 
   .container .one-half.column      { width: $column-width*6-($column-margin/2);  }

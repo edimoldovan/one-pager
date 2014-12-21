@@ -1,0 +1,247 @@
+// Colors
+$primary-color: #0288d1; 
+$secondary-color: #bbbbbb;
+$border-color: #bbbbbb;
+$link-color: #1EAEDB;
+$font-color: #222222;
+$light-gray: #e1e1e1;
+$dark-gray: #333333;
+
+@import "../../vendor/framework";
+
+$home-bg: #ffffff;
+$features-bg: #03a9f4;
+
+$home-text: #212121;
+$features-text: #ffffff;
+$logo-text: #ffc107;
+
+$niconne: "Niconne", cursive;
+
+// serif foonts
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Vollkorn', serif;
+font-family: 'Alegreya', serif;
+font-family: 'Vidaloka', serif;
+font-family: 'IM Fell English', serif;
+font-family: 'Gabriela', serif;
+*/
+
+// sans serif fonts
+/*
+font-family: 'Cantora One', sans-serif;
+font-family: 'Doppio One', sans-serif;
+font-family: 'Rosario', sans-serif;
+*/
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+	.header {
+		width: 100%;
+
+		h1 {
+			float: left;
+			margin: 0;
+			
+			a {
+				float: left;
+				font-family: $niconne;
+				color: $primary-color;
+				font-size: 6rem;
+				padding: 2rem 0 1rem 0;
+			}
+		}
+
+		.menu {
+			float: right;
+
+			.fa-bars {
+				font-size: 3rem;
+				padding: 5rem 0 2rem 0;
+			}
+		}
+	}
+
+	.home {
+		padding: 0 0 0 0;
+		background-color: $home-bg;
+		margin-bottom: -10rem;
+
+		.button {
+			margin: 3rem auto;
+			display: block;
+			width: 20rem;
+			border-radius: 10rem;
+		}
+
+		h2 {
+			font-size: 2.5rem;
+			color: $home-text;
+		}
+		
+		img {
+			float: right;
+			width: 100%;
+		}
+	}
+
+	.features {
+		padding: 13rem 0 1rem 0;
+		background-color: $features-bg;
+		text-align: center;
+		color: $features-text;
+
+		h2 {
+			font-size: 3rem;
+			font-weight: 400;
+		}
+
+		p {
+			font-size: 1.5rem;
+			font-weight: 400;
+		}
+
+		img {
+			float: right;
+			width: 100%;
+		}
+	}
+
+	.download {
+		padding: 5rem 0;
+		background-color: $home-bg;
+		text-align: center;
+		color: $home-text;
+
+		h2 {
+			font-size: 3rem;
+			font-weight: 400;
+		}
+
+		p {
+			font-size: 1.5rem;
+			font-weight: 400;
+		}
+
+		img {
+			width: 60%;
+			margin-bottom: 1rem;
+		}
+	}
+
+}
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+	.home {
+		padding: 10rem 0 2rem 0;
+
+		.button {
+			margin: 1rem auto;
+			float: left;
+		}
+
+		h2 {
+			font-size: 2.3rem;
+		}
+		
+		img {
+			float: right;
+			margin-top: -10rem;
+			max-width: 30rem;
+		}
+	}
+
+	.download {
+		img {
+			width: 40%;
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+/* Larger than tablet */
+@media (min-width: 750px) {
+	.home {
+		padding: 13rem 0 2rem 0;
+
+		h2 {
+			font-size: 2.6rem;
+		}
+		
+		img {
+			margin-top: -14rem;
+		}
+	}
+
+	.download {
+		img {
+			width: 30%;
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	.home {
+		padding: 17rem 0 2rem 0;
+
+		h2 {
+			font-size: 3.0rem;
+		}
+		
+		img {
+			margin-top: -16rem;
+			max-height: 615px;
+		}
+	}
+
+	.download {
+		img {
+			width: 20%;
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+// pixel-reation queries
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+		color: yellow;
+	}
+	
+}
+
+

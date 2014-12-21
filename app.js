@@ -20,7 +20,7 @@ app.use(express.static(__dirname + "/public"));
 
 app.get("*", function(req, res) {
   "use strict";
-  res.sendFile(__dirname + "/public/html/index.html");
+  res.sendFile(__dirname + "/public/template/html/index.html");
 });
 
 app.listen(3000);

@@ -385,7 +385,7 @@ td, th {
     margin-left: 0; }
 
   .container .one-third.column {
-    width: 31.83333%; }
+    width: 30.33333%; }
 
   .container .two-thirds.column {
     width: 65.16667%; }
@@ -695,9 +695,20 @@ hr {
   display: table;
   clear: both; }
 
-.home {
-  background-color: #ffffff; }
-
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Vollkorn', serif;
+font-family: 'Alegreya', serif;
+font-family: 'Vidaloka', serif;
+font-family: 'IM Fell English', serif;
+font-family: 'Gabriela', serif;
+*/
+/*
+font-family: 'Cantora One', sans-serif;
+font-family: 'Doppio One', sans-serif;
+font-family: 'Rosario', sans-serif;
+*/
 /* Larger than mobile */
 @media (min-width: 400px) {
   .header {
@@ -718,7 +729,9 @@ hr {
         padding: 5rem 0 2rem 0; }
 
   .home {
-    padding: 0 0 10rem 0; }
+    padding: 0 0 0 0;
+    background-color: #ffffff;
+    margin-bottom: -10rem; }
     .home .button {
       margin: 3rem auto;
       display: block;
@@ -727,59 +740,84 @@ hr {
     .home h2 {
       font-size: 2.5rem;
       color: #212121; }
-    .home .image {
+    .home img {
       float: right;
       width: 100%; }
 
-  .work {
-    padding: 0 0 10rem 0; }
-    .work .button {
-      margin: 3rem auto;
-      display: block;
-      width: 20rem;
-      border-radius: 10rem; }
-    .work h2 {
-      font-size: 2.5rem;
-      color: #212121; }
-    .work .image {
+  .features {
+    padding: 13rem 0 1rem 0;
+    background-color: #03a9f4;
+    text-align: center;
+    color: #ffffff; }
+    .features h2 {
+      font-size: 3rem;
+      font-weight: 400; }
+    .features p {
+      font-size: 1.5rem;
+      font-weight: 400; }
+    .features img {
       float: right;
       width: 100%; }
+
+  .download {
+    padding: 5rem 0;
+    background-color: #ffffff;
+    text-align: center;
+    color: #212121; }
+    .download h2 {
+      font-size: 3rem;
+      font-weight: 400; }
+    .download p {
+      font-size: 1.5rem;
+      font-weight: 400; }
+    .download img {
+      width: 60%;
+      margin-bottom: 1rem; }
  }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   .home {
-    padding: 20rem 0 10rem; }
+    padding: 10rem 0 2rem 0; }
     .home .button {
       margin: 1rem auto;
       float: left; }
     .home h2 {
-      font-size: 2.4rem; }
-    .home .image {
+      font-size: 2.3rem; }
+    .home img {
       float: right;
       margin-top: -10rem;
       max-width: 30rem; }
+
+  .download img {
+    width: 40%; }
  }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   .home {
-    padding: 20rem 0 10rem; }
+    padding: 13rem 0 2rem 0; }
     .home h2 {
       font-size: 2.6rem; }
-    .home .image {
+    .home img {
       margin-top: -14rem; }
+
+  .download img {
+    width: 30%; }
  }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .home {
-    padding: 25rem 0 10rem; }
+    padding: 17rem 0 2rem 0; }
     .home h2 {
       font-size: 3rem; }
-    .home .image {
+    .home img {
       margin-top: -16rem;
       max-height: 615px; }
+
+  .download img {
+    width: 20%; }
  }
 
 /* Larger than Desktop HD */

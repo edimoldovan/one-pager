@@ -50,16 +50,10 @@ font-family: 'Rosario', sans-serif;
 		background-color: $menu-bg;
 		color: $features-text;
 		top: 0;
-		right: 0;
 		bottom: 0;
-		left: 0;
-		z-index: 1;
-
-		h1 {
-			a {
-				color: $sidemenu-logo-text !important;
-			}
-		}
+		right: 0;
+		width: 100%;
+		z-index: 3;
 	}
 
 	#side-menu.hide {
@@ -73,6 +67,10 @@ font-family: 'Rosario', sans-serif;
 	.header {
 		width: 100%;
 
+		* {
+			z-index: 2;
+		}
+
 		h1 {
 			float: left;
 			margin: 0;
@@ -85,23 +83,32 @@ font-family: 'Rosario', sans-serif;
 				padding: 2rem 0 1rem 0;
 			}
 		}
+	}
 
-		#menu-open {
-			float: right;
+	.blur {
+		background-color: rgba(255, 255, 255, 0.5);
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 1;
+	}
 
-			.fa-bars {
-				font-size: 3rem;
-				padding: 5rem 0 2rem 0;
-			}
+	#menu-open {
+		float: right;
+
+		.fa-bars {
+			font-size: 3rem;
+			padding: 5rem 0 2rem 0;
 		}
+	}
 
-		#menu-close {
-			float: right;
+	#menu-close {
+		float: right;
 
-			.fa-times {
-				font-size: 3rem;
-				padding: 5rem 0 2rem 0;
-			}
+		.fa-times {
+			font-size: 3rem;
+			padding: 5rem 5rem 2rem 0;
 		}
 	}
 
@@ -181,8 +188,22 @@ font-family: 'Rosario', sans-serif;
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
 
+	#side-menu {
+		width: 80%;
+	}
+
+	.header {
+		position: fixed;
+		background-color: $features-text;
+		z-index: 1;
+
+		#menu-close {
+			margin-right: 23%;
+		}
+	}
+
 	.home {
-		padding: 10rem 0 2rem 0;
+		padding: 24rem 0 2rem 0;
 
 		.button {
 			margin: 1rem auto;
@@ -213,8 +234,13 @@ font-family: 'Rosario', sans-serif;
 ///////////////////////////////////////////////////////////////
 /* Larger than tablet */
 @media (min-width: 750px) {
+
+	#side-menu {
+		width: 60%;
+	}
+
 	.home {
-		padding: 13rem 0 2rem 0;
+		padding: 27rem 0 2rem 0;
 
 		h2 {
 			font-size: 2.6rem;
@@ -238,8 +264,13 @@ font-family: 'Rosario', sans-serif;
 ///////////////////////////////////////////////////////////////
 /* Larger than desktop */
 @media (min-width: 1000px) {
+
+	#side-menu {
+		width: 40%;
+	}
+
 	.home {
-		padding: 17rem 0 2rem 0;
+		padding: 30rem 0 2rem 0;
 
 		h2 {
 			font-size: 3.0rem;
@@ -248,6 +279,12 @@ font-family: 'Rosario', sans-serif;
 		img {
 			margin-top: -16rem;
 			max-height: 615px;
+		}
+	}
+
+	.header {
+		#menu-close {
+			margin-right: 57%;
 		}
 	}
 
@@ -263,7 +300,13 @@ font-family: 'Rosario', sans-serif;
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+	#side-menu {
+		width: 30%;
+	}
+
+}
 
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////

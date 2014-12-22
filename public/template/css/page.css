@@ -711,6 +711,24 @@ font-family: 'Rosario', sans-serif;
 */
 /* Larger than mobile */
 @media (min-width: 400px) {
+  #side-menu {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+    #side-menu h1 a {
+      color: #ffc107 !important; }
+
+  #side-menu.hide {
+    display: none; }
+
+  #side-menu.show {
+    display: block; }
+
   .header {
     width: 100%; }
     .header h1 {
@@ -722,9 +740,14 @@ font-family: 'Rosario', sans-serif;
         color: #0288d1;
         font-size: 6rem;
         padding: 2rem 0 1rem 0; }
-    .header .menu {
+    .header #menu-open {
       float: right; }
-      .header .menu .fa-bars {
+      .header #menu-open .fa-bars {
+        font-size: 3rem;
+        padding: 5rem 0 2rem 0; }
+    .header #menu-close {
+      float: right; }
+      .header #menu-close .fa-times {
         font-size: 3rem;
         padding: 5rem 0 2rem 0; }
 

@@ -4,12 +4,25 @@
 
 (function() {
 	"use strict";
-	var menu = document.getElementById("menu");
+	var menuOpen = document.getElementById("menu-open"),
+		menuClose = document.getElementById("menu-close");
 
-	if (menu) {
-		menu.addEventListener("click", function(event) {
+	if (menuOpen) {
+		menuOpen.addEventListener("click", function(event) {
+			var sideMenu = document.getElementById("side-menu");
+			
 			event.preventDefault();
-			alert("clicked");
+			sideMenu.classList.add("show");
+			// sideMenu.classList.remove("hide");
+		}, false);
+	}
+
+	if (menuClose) {
+		menuClose.addEventListener("click", function(event) {
+			var sideMenu = document.getElementById("side-menu");
+			
+			event.preventDefault();
+			sideMenu.classList.remove("show");
 		}, false);
 	}
 }());

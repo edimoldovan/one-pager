@@ -514,14 +514,6 @@ h6 {
 p {
   margin-top: 0; }
 
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-
-a:hover {
-  color: #1b9cc5; }
-
 /* Buttons 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
@@ -720,6 +712,8 @@ font-family: 'Rosario', sans-serif;
     right: 0;
     width: 100%;
     z-index: 3; }
+    #side-menu > a {
+      color: #0288d1; }
 
   #side-menu.hide {
     display: none; }
@@ -736,10 +730,11 @@ font-family: 'Rosario', sans-serif;
       margin: 0; }
       .header h1 a {
         float: left;
-        font-family: "Niconne", cursive;
-        color: #0288d1;
+        padding: 2rem 0 1rem 0;
         font-size: 6rem;
-        padding: 2rem 0 1rem 0; }
+        font-family: "Niconne", cursive; }
+    .header a {
+      color: #0288d1; }
 
   .blur {
     background-color: rgba(255, 255, 255, 0.5);

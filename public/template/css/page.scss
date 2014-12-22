@@ -54,6 +54,10 @@ font-family: 'Rosario', sans-serif;
 		right: 0;
 		width: 100%;
 		z-index: 3;
+
+		> a {
+			color: $primary-color;
+		}
 	}
 
 	#side-menu.hide {
@@ -74,14 +78,17 @@ font-family: 'Rosario', sans-serif;
 		h1 {
 			float: left;
 			margin: 0;
-			
+
 			a {
 				float: left;
-				font-family: $niconne;
-				color: $primary-color;
-				font-size: 6rem;
 				padding: 2rem 0 1rem 0;
+				font-size: 6rem;
+				font-family: $niconne;
 			}
+		}
+
+		a {
+			color: $primary-color;
 		}
 	}
 

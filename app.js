@@ -23,4 +23,6 @@ app.get("*", function(req, res) {
   res.sendFile(__dirname + "/public/template/html/index.html");
 });
 
-app.listen(3000);
+app.listen(3000, function() {
+  console.log("server sunning on http://localhost:3000");
+});
